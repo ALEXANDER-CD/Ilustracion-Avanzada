@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entrega de Avance · Planeación de Infografía</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,800;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F8F5EE;--ink:#1C1917;--red:#D84A38;--ocre:#E5A84B;--teal:#2D4A5E;--crim:#B83220;--ivory:#FBF7EC;--line:rgba(28,25,23,.18);--card:#FFFDF8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1a17;--ink:#F3EDE0;--line:rgba(243,237,224,.2);--card:#26221e}}
+:root[data-theme="dark"]{--bg:#1d1a17;--ink:#F3EDE0;--line:rgba(243,237,224,.2);--card:#26221e}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+.serif{font-family:'Playfair Display',Georgia,serif}
+em{font-style:italic;color:var(--red)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:12px 16px;background:var(--bg);border-bottom:1px solid var(--line);font-size:13px}
+nav a{color:var(--ink);text-decoration:none;padding:4px 12px;border-radius:2px 14px 3px 12px;transition:.2s}
+nav a:hover,nav a.on{background:var(--red);color:#fff}
+section{position:relative;padding:96px 6vw;max-width:1200px;margin:auto}
+.eyebrow{letter-spacing:.2em;font-size:12px;text-transform:uppercase;color:var(--red);font-weight:600}
+h1{font-size:clamp(38px,6.2vw,76px);line-height:1.04;margin:16px 0 20px;font-weight:800}
+h2{font-size:clamp(30px,4.4vw,54px);line-height:1.1;margin:10px 0 18px;font-weight:800}
+.num{font-family:'Playfair Display',serif;font-size:120px;line-height:.8;color:var(--red);opacity:.9;font-weight:800}
+.lead{font-size:18px;max-width:560px;opacity:.85}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:10px 28px;border:0;font:600 13px Inter;letter-spacing:.08em;clip-path:polygon(0 12%,3% 0,40% 6%,100% 0,97% 50%,100% 100%,55% 94%,2% 100%,0 60%);text-decoration:none;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;min-height:90vh}
+.hero svg{width:100%;height:auto}
+.meta{display:grid;grid-template-columns:repeat(2,auto);gap:6px 28px;margin:26px 0;font-size:14px;width:max-content;max-width:100%;border-top:1px solid var(--ink);padding-top:14px}
+.meta b{font-weight:600;display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+.tag{display:inline-block;background:var(--ocre);color:#1C1917;padding:2px 12px;border-radius:12px 2px 12px 2px;font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.card{background:var(--card);border:1px solid var(--line);padding:26px;border-radius:2px}
+.card h3{margin:0 0 6px;font-family:'Playfair Display',serif;font-size:22px}
+.card p{margin:0;font-size:15px;opacity:.85}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:30px}
+.zig{width:100%;height:auto}
+.st{cursor:pointer}.st circle{transition:.25s}.st:hover circle,.st.on circle{fill:var(--red)}.st:hover text.n,.st.on text.n{fill:#fff}
+#stInfo{min-height:90px;margin-top:10px;border-left:4px solid var(--red);padding:6px 18px;font-size:15px}
+.sw{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+.sw button{width:130px;height:150px;border:0;cursor:pointer;display:flex;align-items:flex-end;padding:10px;text-align:left;font:500 12px Inter;border-radius:3px 24px 3px 24px;transition:.25s}
+.sw button:hover{transform:translateY(-6px) rotate(-1.5deg)}
+#swInfo{margin-top:16px;font-size:15px;min-height:48px}
+.frames{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;margin-top:34px}
+.frame{background:#fff;padding:14px;border:10px solid #3a2f26;box-shadow:6px 8px 0 rgba(0,0,0,.12)}
+.frame>div{aspect-ratio:4/5;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;font-size:13px;position:relative;overflow:hidden}
+.frame b{font-family:'Playfair Display',serif;font-size:20px;display:block}
+.band{background:var(--crim);color:var(--ivory);max-width:none;text-align:center;padding:90px 6vw}
+.band .stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;margin-top:34px}
+.band .stats div{font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.band .stats span{display:block;font:800 52px 'Playfair Display',serif;color:var(--ocre);letter-spacing:0}
+.tl{border-left:2px solid var(--ink);margin-left:12px}
+.tl div{position:relative;padding:0 0 28px 28px}
+.tl div::before{content:"";position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--red)}
+.tl b{font-family:'Playfair Display',serif;font-size:20px}
+footer{text-align:center;padding:50px 20px;font-size:13px;opacity:.7;border-top:1px solid var(--line)}
+.bg-lines{position:absolute;inset:0;z-index:-1;opacity:.5;pointer-events:none}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s}.reveal.in{opacity:1;transform:none}
+@media(max-width:800px){.hero,.two{grid-template-columns:1fr}section{padding:64px 6vw}.num{font-size:80px}}
+.num{display:block;font-size:84px;line-height:1.1;margin:0 0 14px;padding-bottom:10px;border-bottom:3px solid var(--ocre);width:max-content;max-width:100%}
+.num+.eyebrow{display:block;margin-top:6px}
+.card{position:relative;background:var(--card);border:1.5px solid var(--ink);padding:30px 26px 24px;border-radius:3px 28px 3px 28px;box-shadow:6px 6px 0 var(--ocre);transition:transform .25s,box-shadow .25s;cursor:pointer;overflow:hidden;will-change:transform}
+.card::before{content:"";position:absolute;left:0;top:0;width:100%;height:6px;background:var(--red)}
+.card::after{content:"+";position:absolute;right:18px;top:16px;font-size:24px;line-height:1;color:var(--red);transition:.3s}
+.card.open::after{transform:rotate(45deg)}
+.card:hover{box-shadow:10px 10px 0 var(--red)}
+.card h3{padding-right:28px}
+.card .more{max-height:0;overflow:hidden;transition:max-height .45s,margin .45s;font-size:14px;color:var(--teal)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card .more{color:var(--ocre)}}
+.card.open .more{max-height:220px;margin-top:14px;border-top:1px dashed var(--line);padding-top:12px}
+.frame{transition:transform .25s,box-shadow .25s;will-change:transform}
+.frame:hover{box-shadow:12px 14px 0 rgba(216,74,56,.35)}
+.frame>div::after{content:"";position:absolute;inset:0;background:repeating-radial-gradient(circle at 80% 0,transparent 0 9px,rgba(255,255,255,.08) 9px 10px);transition:.5s}
+.frame:hover>div::after{transform:scale(1.4) rotate(8deg)}
+.tl div{cursor:pointer}
+.tl div .d{max-height:0;overflow:hidden;transition:max-height .4s;font-size:14px;color:var(--teal)}
+.tl div.open .d{max-height:90px;margin-top:8px}
+.tl div.open::before{transform:scale(1.5);background:var(--ocre);box-shadow:0 0 0 4px var(--red)}
+.tl div::before{transition:.3s}
+#prog{position:fixed;left:0;top:calc(env(safe-area-inset-top,0px) + 0px);height:4px;width:0;background:var(--red);z-index:70}
+.st text.n{transition:.25s}.st{transition:transform .25s;transform-box:fill-box;transform-origin:center}.st:hover{transform:scale(1.12)}
+.note{max-width:1200px;margin:0 auto;padding:16px 6vw;background:var(--ocre);color:#1C1917;font-size:14px;border-radius:2px 18px 2px 18px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chip{border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:8px 18px;font:500 14px Inter;cursor:pointer;border-radius:2px 16px 2px 16px;transition:.2s}
+.chip:hover{transform:translateY(-3px) rotate(-1deg)}.chip.on{background:var(--red);border-color:var(--red);color:#fff}
+.tinfo{margin-top:14px;border-left:4px solid var(--red);padding:4px 16px;font-size:15px;min-height:52px}
+.type{display:grid;gap:22px;margin-top:20px}.type small,.titlebox small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.6;margin-bottom:6px}
+.type>div{padding:18px 22px;background:var(--card);border:1.5px solid var(--ink);border-radius:3px 24px 3px 24px;box-shadow:5px 5px 0 var(--ocre)}
+.titlebox{background:var(--card);border:1.5px solid var(--ink);padding:30px;border-radius:3px 32px 3px 32px;box-shadow:8px 8px 0 var(--red);margin-top:30px}
+.titlebox .serif{font-size:clamp(28px,4vw,46px);font-weight:800;line-height:1.1;margin-bottom:22px}.titlebox p{margin:0;font-size:18px;max-width:640px}
+.src{padding-left:20px;font-size:15px;line-height:1.9}
+.ph{position:absolute;top:12px;left:12px;font-size:11px;letter-spacing:.1em;border:1px dashed #fff;padding:2px 8px;border-radius:10px}
+.ill{background:var(--card);border:1.5px solid var(--ink);padding:20px;border-radius:3px 28px 3px 28px;box-shadow:6px 6px 0 var(--ocre);cursor:pointer;transition:.25s;position:relative}
+.ill:hover{box-shadow:10px 10px 0 var(--red);transform:translateY(-4px)}
+.ill h3{margin:8px 0 4px;font:700 20px 'Playfair Display',serif}.ill p{margin:0;font-size:14px;opacity:.85}
+.ill .art{background:var(--bg);border-radius:2px 18px 2px 18px;padding:10px}
+.ill .hint{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;color:var(--red);letter-spacing:.08em;text-transform:uppercase}
+.il{width:100%;height:auto;display:block}
+.il *{fill:none;stroke:var(--ink);stroke-width:2;transition:.5s}
+.ill.flat .il *{fill:var(--f);stroke:none}.ill.flat .il .ln{fill:none;stroke:var(--ink);stroke-width:3}
+.rules{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:34px}.rules span{background:var(--teal);color:#fff;padding:6px 16px;font-size:13px;border-radius:2px 14px 2px 14px}
+.mb{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:150px;gap:16px;margin-top:20px}
+.mt{margin:0;position:relative;overflow:hidden;border:6px solid #3a2f26;background:#fff;box-shadow:5px 6px 0 rgba(0,0,0,.14);cursor:pointer;transition:.3s}
+.mt.tall{grid-row:span 2}.mt svg{width:100%;height:100%;display:block}
+.mt:hover{transform:rotate(-1deg) translateY(-4px)}
+.mt figcaption{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font-size:11px;font-weight:600;padding:2px 12px 2px 8px;letter-spacing:.06em;clip-path:polygon(0 0,100% 0,92% 100%,0 100%)}
+.mt .tip{position:absolute;inset:0;background:rgba(28,25,23,.88);color:#fff;padding:16px;font-size:13px;display:flex;flex-direction:column;justify-content:center;gap:6px;opacity:0;transition:.3s}
+.mt .tip b{font:700 18px 'Playfair Display',serif;color:var(--ocre)}
+.mt:hover .tip,.mt.on .tip{opacity:1}
+.mt.dim{opacity:.18;filter:grayscale(1)}
+@media(max-width:800px){.mb{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#inicio">Portada</a><a href="#m1">1 · Tipo</a><a href="#m2">2 · Moodboard</a><a href="#m3">3 · Contenido</a><a href="#m4">4 · Flat Design</a>
+</nav>
+
+<section id="inicio" class="hero">
+<svg class="bg-lines" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#1C1917" stroke-width=".6"><g id="g"></g></svg>
+<div class="reveal">
+<div class="eyebrow">Entrega de avance // Diseño de información</div>
+<h1 class="serif">De Persona a Marca: Arquitectura de <em>Identidad Digital</em> para Creadores</h1>
+<p class="lead">Planeación conceptual, metodológica y dirección de arte previa a la construcción vectorial en Illustrator.</p>
+<div class="meta">
+<div><b>Autor</b>Jhon Cubillos</div><div><b>Asignatura</b>Ilustración Avanzada</div>
+<div><b>Fecha</b>10 · 11 · 2026</div><div><b>Estado</b><span class="tag">En planeación</span></div>
+</div>
+<a class="btn" href="#m1">Comenzar recorrido</a>
+</div>
+<svg viewBox="0 0 420 460" aria-hidden="true" class="reveal">
+<path d="M250 40c70-20 150 20 150 100 0 90-60 140-130 120S190 120 250 40Z" fill="#D84A38"/>
+<path d="M60 300c10-90 120-120 200-70 60 40 40 150-30 180S40 390 60 300Z" fill="#E5A84B"/>
+<g fill="none" stroke="#1C1917" stroke-width="1.2">
+<circle cx="210" cy="230" r="150"/><circle cx="210" cy="230" r="130"/><circle cx="210" cy="230" r="110"/><circle cx="210" cy="230" r="90"/><circle cx="210" cy="230" r="70"/>
+<path d="M120 420c0-90 40-130 90-130s90 40 90 130" stroke-width="2"/>
+<circle cx="210" cy="210" r="48" fill="#F8F5EE" stroke-width="2"/><circle cx="210" cy="210" r="22" stroke-width="2"/><circle cx="210" cy="210" r="9" fill="#2D4A5E"/>
+<path d="M150 170c20-40 80-50 120-10M160 150l-15-30M190 140l-5-35M225 138l10-32M250 150l25-25" stroke-width="2"/>
+</g>
+</svg>
+</section>
+
+<div class="note"><b>Importante:</b> este avance no es la infografía terminada. Es la planeación conceptual y visual que permitirá iniciar la construcción en Illustrator con una intención comunicativa clara y un lenguaje gráfico definido.</div>
+<section id="m1">
+<div class="two">
+<div class="reveal"><div class="num">01</div><div class="eyebrow">Definición del tipo de infografía</div>
+<h2 class="serif">Infografía de <em>procesos</em> o pasos</h2>
+<p class="lead">Con soporte metodológico y explicativo. Pasar de individuo a ecosistema de marca no es un evento fortuito: es un sistema acumulativo de cuatro fases secuenciales, donde cada etapa habilita la siguiente.</p>
+<div class="grid3" style="grid-template-columns:1fr">
+<div class="chips" id="tipoChips">
+<button class="chip" data-d="Sirve para explicar un concepto, pero no muestra el orden entre fases.">Informativa</button>
+<button class="chip" data-d="Exige dos o más opciones contrapuestas; aquí hay una sola evolución.">Comparativa</button>
+<button class="chip" data-d="Ordena por fechas; nuestras fases dependen de acumulación, no de calendario.">Cronológica</button>
+<button class="chip" data-d="Requiere datos numéricos como protagonistas; el tema es metodológico.">Estadística</button>
+<button class="chip on" data-d="Elegida: el orden de lectura es el contenido. Cada paso habilita el siguiente y hace visible la causalidad entre fases.">De procesos o pasos</button>
+</div>
+<div id="tipoInfo" class="tinfo">Elegida: el orden de lectura es el contenido. Cada paso habilita el siguiente y hace visible la causalidad entre fases.</div>
+</div></div>
+<div class="reveal">
+<svg class="zig" viewBox="0 0 400 530" id="zig" style="overflow:visible">
+<path d="M90 60H310L90 190H310L90 320H310L90 430" fill="none" stroke="#D84A38" stroke-width="3" stroke-dasharray="7 7"/>
+</svg>
+<div id="stInfo">Toca una estación para ver su función.</div>
+</div>
+</div>
+</section>
+
+<section id="m2">
+<div class="reveal"><div class="num">02</div><div class="eyebrow">Moodboard de dirección de arte y referentes</div>
+<h2 class="serif">Una galería para <em>decidir</em> cómo se verá</h2></div>
+<div class="grid3 reveal">
+<div class="card"><h3>Grilla vertical</h3><p>Columna principal con módulos apilados; cada paso ocupa una banda completa del lienzo.</p></div>
+<div class="card"><h3>Recorrido en “S”</h3><p>El ojo zigzaguea: alternancia izquierda/derecha entre gráfico y texto, conectada por una línea guía.</p></div>
+<div class="card"><h3>Proporción 60 / 40</h3><p>60 % visual y 40 % texto. La imagen atrae; el texto explica solo lo necesario.</p></div>
+</div>
+<h3 class="serif reveal" style="font-size:28px;margin-top:56px">Paleta de color</h3>
+<div class="sw reveal" id="sw"></div>
+<div id="swInfo">Pasa el cursor o toca un color.</div>
+<h3 class="serif reveal" style="font-size:28px;margin-top:56px">Moodboard de referentes</h3>
+<p class="reveal" style="max-width:640px;opacity:.8">Seis recursos gráficos que se adaptarán a la infografía. Filtra por criterio y toca una pieza para ver qué se toma de ella.</p>
+<div class="chips reveal" id="mbF"><button class="chip on" data-f="all">Todos</button><button class="chip" data-f="jer">Jerarquía</button><button class="chip" data-f="txt">Texto e imagen</button><button class="chip" data-f="est">Estilo y síntesis</button><button class="chip" data-f="col">Color y tipografía</button></div>
+<div class="mb reveal"><figure class="mt tall" data-cat="jer"><svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid slice"><rect width="200" height="260" fill="#F8F5EE"/><rect x="14" y="14" width="120" height="14" fill="#1C1917"/><rect x="14" y="34" width="70" height="6" fill="#D84A38"/><path d="M50 90H150L50 150H150L50 210" stroke="#D84A38" stroke-width="2" stroke-dasharray="5 4" fill="none"/><circle cx="50" cy="90" r="15" fill="#1C1917"/><circle cx="150" cy="90" r="15" fill="#D84A38"/><circle cx="50" cy="150" r="15" fill="#E5A84B"/><circle cx="150" cy="150" r="15" fill="#2D4A5E"/><circle cx="50" cy="210" r="15" fill="#1C1917"/><rect x="72" y="84" width="40" height="5" fill="#1C1917" opacity=".4"/><rect x="88" y="144" width="40" height="5" fill="#1C1917" opacity=".4"/></svg><div class="tip"><b>Recorrido en S</b>Tomar: línea punteada que conecta pasos y numeración grande.</div><figcaption>Recorrido en S</figcaption></figure><figure class="mt " data-cat="txt"><svg viewBox="0 0 200 170" preserveAspectRatio="xMidYMid slice"><rect width="200" height="260" fill="#F8F5EE"/><rect x="12" y="14" width="86" height="60" fill="#E5A84B"/><circle cx="55" cy="44" r="18" fill="#D84A38"/><rect x="108" y="22" width="80" height="6" fill="#1C1917"/><rect x="108" y="36" width="70" height="4" fill="#1C1917" opacity=".4"/><rect x="108" y="46" width="76" height="4" fill="#1C1917" opacity=".4"/><rect x="14" y="100" width="76" height="4" fill="#1C1917" opacity=".4"/><rect x="14" y="90" width="60" height="6" fill="#1C1917"/><rect x="102" y="86" width="86" height="60" fill="#2D4A5E"/><path d="M120 136L145 100L170 136Z" fill="#F8F5EE"/></svg><div class="tip"><b>Texto e imagen alternados</b>Tomar: ilustración grande de un lado, texto corto del otro (60/40).</div><figcaption>Texto e imagen alternados</figcaption></figure><figure class="mt " data-cat="est"><svg viewBox="0 0 200 170" preserveAspectRatio="xMidYMid slice"><rect width="200" height="260" fill="#EFE7D6"/><circle cx="50" cy="55" r="28" fill="#D84A38"/><rect x="92" y="30" width="46" height="46" rx="10" fill="#2D4A5E"/><path d="M150 76L172 30L194 76Z" fill="#E5A84B"/><rect x="20" y="104" width="70" height="40" rx="20" fill="#E5A84B"/><circle cx="120" cy="124" r="20" fill="#1C1917"/><rect x="148" y="104" width="38" height="40" rx="8" fill="#D84A38"/></svg><div class="tip"><b>Hoja de formas flat</b>Tomar: figuras simples, sin contorno ni degradado.</div><figcaption>Hoja de formas flat</figcaption></figure><figure class="mt " data-cat="col"><svg viewBox="0 0 200 170" preserveAspectRatio="xMidYMid slice"><rect width="200" height="260" fill="#F8F5EE"/><text x="16" y="96" font-family="Playfair Display,serif" font-size="84" font-weight="800" fill="#1C1917">A<tspan font-style="italic" fill="#D84A38">a</tspan></text><circle cx="30" cy="132" r="12" fill="#D84A38"/><circle cx="60" cy="132" r="12" fill="#E5A84B"/><circle cx="90" cy="132" r="12" fill="#2D4A5E"/><circle cx="120" cy="132" r="12" fill="#1C1917"/></svg><div class="tip"><b>Color y tipografía</b>Tomar: serif de alto contraste + 4 colores con rol definido.</div><figcaption>Color y tipografía</figcaption></figure><figure class="mt " data-cat="est"><svg viewBox="0 0 200 170" preserveAspectRatio="xMidYMid slice"><rect width="200" height="260" fill="#EFE7D6"/><rect x="18" y="16" width="44" height="40" rx="20" fill="#D84A38"/><rect x="78" y="16" width="44" height="40" rx="6" fill="#2D4A5E"/><rect x="138" y="16" width="44" height="40" rx="12" fill="#E5A84B"/><rect x="18" y="66" width="44" height="40" rx="20" fill="#2D4A5E"/><rect x="78" y="66" width="44" height="40" rx="6" fill="#E5A84B"/><rect x="138" y="66" width="44" height="40" rx="12" fill="#D84A38"/></svg><div class="tip"><b>Sistema de iconos</b>Tomar: mismo grosor, esquinas y tamaño en toda la serie.</div><figcaption>Sistema de iconos</figcaption></figure><figure class="mt tall" data-cat="jer"><svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid slice"><rect width="200" height="260" fill="#B83220"/><text x="14" y="120" font-family="Playfair Display,serif" font-size="110" font-weight="800" fill="#F8F5EE">04</text><rect x="14" y="140" width="90" height="6" fill="#F8F5EE"/><rect x="14" y="156" width="150" height="4" fill="#F8F5EE" opacity=".6"/><rect x="14" y="168" width="130" height="4" fill="#F8F5EE" opacity=".6"/><circle cx="160" cy="40" r="22" fill="#E5A84B"/></svg><div class="tip"><b>Dato protagonista</b>Tomar: cifra enorme como ancla y texto de apoyo breve.</div><figcaption>Dato protagonista</figcaption></figure></div>
+<p style="font-size:13px;opacity:.65">Piezas ilustrativas de cada recurso. Si subes tus capturas de infografías reales, las incorporo aquí con su fuente.</p>
+<h3 class="serif reveal" style="font-size:28px;margin-top:56px">Tipografías</h3>
+<div class="type reveal">
+<div><small>Títulos · Playfair Display 800</small><div class="serif" style="font-size:42px;font-weight:800;line-height:1.1">De persona a <em>marca</em></div></div>
+<div><small>Subtítulos · Inter 600</small><div style="font-size:15px;font-weight:600;letter-spacing:.14em;text-transform:uppercase">Fase 02 · Identidad visual</div></div>
+<div><small>Párrafos · Inter 400</small><div style="font-size:16px;max-width:520px">Una identidad se reconoce por repetición: mismos colores, misma voz, mismas formas.</div></div>
+</div>
+<h3 class="serif reveal" style="font-size:28px;margin-top:56px">Estilo gráfico</h3>
+<div class="chips reveal" id="estChips">
+<button class="chip on" data-d="Elegido: círculos, líneas y bloques como base de toda la composición.">Geométrico</button>
+<button class="chip on" data-d="Elegido: un icono por dato o acción, en el mismo grosor y esquinas.">Iconos</button>
+<button class="chip on" data-d="Elegido: ilustraciones flat vectoriales por bloque, hechas en Illustrator.">Ilustración</button>
+<button class="chip" data-d="Descartado: añade profundidad que choca con el flat design.">Isométrico</button>
+<button class="chip" data-d="Descartado: el tono editorial pide formas limpias y controladas.">Garabatos</button>
+</div>
+<div id="estInfo" class="tinfo">Selección: Geométrico + iconos + ilustración flat. Toca una opción para ver su criterio.</div>
+</section>
+
+<div class="band">
+<div class="eyebrow" style="color:var(--ocre)">Banda de quiebre</div>
+<h2 class="serif" style="margin-top:10px">Cuatro fases, un solo <i>recorrido</i></h2>
+<div class="stats"><div><span>4</span>Estaciones</div><div><span>60/40</span>Visual / texto</div><div><span>5</span>Colores</div><div><span>1</span>Pieza final</div></div>
+</div>
+
+<section id="m3">
+<div class="reveal"><div class="num">03</div><div class="eyebrow">Estructura y contenido de la infografía</div>
+<h2 class="serif">Lo que se va a <em>decir</em></h2></div>
+<div class="titlebox reveal"><small>Título principal</small><div class="serif">De persona a <em>marca</em>: 4 pasos para construir tu identidad digital</div>
+<small>Frase introductoria</small><p>Una marca de creador no aparece de la nada: se construye por capas, desde lo que eres hasta lo que otros reconocen.</p></div>
+<h3 class="serif reveal" style="font-size:28px;margin-top:40px">Bloques de información</h3>
+<div class="grid3 reveal">
+<div class="card"><h3>1 · Persona</h3><p>Todo parte de una pregunta: ¿qué te hace distinto? Define valores, voz y propósito antes de abrir cualquier red social.</p></div>
+<div class="card"><h3>2 · Identidad</h3><p>Traduce lo que eres en un sistema reconocible: nombre, paleta, tipografías y tono de voz.</p></div>
+<div class="card"><h3>3 · Presencia</h3><p>Elige pocos canales y sé consistente: la marca se reconoce por repetición, no por volumen.</p></div>
+<div class="card"><h3>4 · Ecosistema</h3><p>La marca madura cuando la audiencia participa: comunidad, productos y colaboraciones se alimentan entre sí.</p></div>
+</div>
+<h3 class="serif reveal" style="font-size:28px;margin-top:40px">Fuentes de consulta</h3>
+<ul class="src reveal">
+<li>Peters, T. (1997). <i>The Brand Called You</i>. Fast Company.</li>
+<li>Aaker, D. (1996). <i>Building Strong Brands</i>. Free Press.</li>
+<li>Kleon, A. (2014). <i>Show Your Work!</i> Workman Publishing.</li>
+<li>Kelly, K. (2008). <i>1,000 True Fans</i>. The Technium.</li>
+</ul>
+<p style="font-size:13px;opacity:.65">Verifica cada referencia y ajústala al formato que pida la asignatura.</p>
+</section>
+
+<section id="m4">
+<div class="reveal"><div class="num">04</div><div class="eyebrow">Referentes para las ilustraciones Flat Design</div>
+<h2 class="serif">Del trazo a la <em>forma plana</em></h2>
+<p class="lead">Una ilustración por bloque. Toca cada una para pasar de la referencia (contorno) a su simplificación flat.</p></div>
+<div class="grid3 reveal">
+<div class="ill"><div class="art"><svg class="il" viewBox="0 0 160 120"><path d="M36 112Q36 68 80 68Q124 68 124 112Z" style="--f:#D84A38"/><circle cx="80" cy="40" r="20" style="--f:#E5A84B"/><rect x="118" y="14" width="14" height="14" style="--f:#2D4A5E"/></svg></div><h3>1 · Persona</h3><p>Referente: retrato de creador en busto. Se reduce a círculo y semicírculo.</p><span class="hint">Ver flat</span></div>
+<div class="ill"><div class="art"><svg class="il" viewBox="0 0 160 120"><circle cx="80" cy="60" r="46" style="--f:#E5A84B"/><circle cx="60" cy="46" r="9" style="--f:#D84A38"/><circle cx="92" cy="40" r="9" style="--f:#2D4A5E"/><circle cx="104" cy="70" r="9" style="--f:#B83220"/></svg></div><h3>2 · Identidad</h3><p>Referente: paleta de pintor. Se reduce a un disco y círculos de color.</p><span class="hint">Ver flat</span></div>
+<div class="ill"><div class="art"><svg class="il" viewBox="0 0 160 120"><rect x="52" y="8" width="56" height="104" rx="10" style="--f:#2D4A5E"/><rect x="60" y="22" width="40" height="34" rx="4" style="--f:#E5A84B"/><circle cx="80" cy="82" r="10" style="--f:#D84A38"/><rect x="62" y="98" width="36" height="5" rx="2" style="--f:#F8F5EE"/></svg></div><h3>3 · Presencia</h3><p>Referente: teléfono con feed. Se reduce a rectángulos redondeados.</p><span class="hint">Ver flat</span></div>
+<div class="ill"><div class="art"><svg class="il" viewBox="0 0 160 120"><path class="ln" d="M80 60L36 26M80 60L124 26M80 60L36 94M80 60L124 94"/><circle cx="80" cy="60" r="18" style="--f:#D84A38"/><circle cx="36" cy="26" r="12" style="--f:#E5A84B"/><circle cx="124" cy="26" r="12" style="--f:#2D4A5E"/><circle cx="36" cy="94" r="12" style="--f:#2D4A5E"/><circle cx="124" cy="94" r="12" style="--f:#E5A84B"/></svg></div><h3>4 · Ecosistema</h3><p>Referente: red de comunidad. Se reduce a nodos conectados.</p><span class="hint">Ver flat</span></div>
+</div>
+<div class="rules reveal"><b class="serif">Reglas de coherencia</b><span>Sin contornos ni degradados</span><span>Máx. 4 colores de la paleta</span><span>Esquinas redondeadas iguales</span><span>Misma escala por bloque</span></div>
+</section>
+
+<footer>Entrega de avance · Planeación de infografía · <span class="tag">En planeación</span></footer>
+
+<script>
+const g=document.getElementById('g');for(let i=1;i<18;i++){const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',650);c.setAttribute('cy',150);c.setAttribute('r',i*26);g.appendChild(c)}
+const steps=[["Persona","Punto de partida: autenticidad, valores y voz."],["Identidad","Se traduce lo personal en un sistema visual y verbal."],["Presencia","La identidad se despliega de forma consistente en canales."],["Ecosistema","La marca se vuelve comunidad y propuesta sostenible."]];
+const pos=[[90,60],[310,190],[90,320],[310,430]];
+const zig=document.getElementById('zig'),info=document.getElementById('stInfo');
+steps.forEach((s,i)=>{const [x,y]=pos[i];const e=document.createElementNS('http://www.w3.org/2000/svg','g');e.setAttribute('class','st');
+e.innerHTML=`<circle cx="${x}" cy="${y}" r="34" fill="#F8F5EE" stroke="#1C1917" stroke-width="2"/><text class="n" x="${x}" y="${y+9}" text-anchor="middle" font-family="Playfair Display,serif" font-size="26" font-weight="800" fill="#1C1917">${i+1}</text><text x="${x}" y="${y+56}" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="currentColor">${s[0]}</text>`;
+const show=()=>{document.querySelectorAll('.st').forEach(n=>n.classList.remove('on'));e.classList.add('on');info.innerHTML=`<b class="serif" style="font-size:20px">${s[0]}</b><br>${s[1]}`};
+e.addEventListener('mouseenter',show);e.addEventListener('click',show);zig.appendChild(e)});
+const cols=[["#F8F5EE","Off-white canvas","Lienzo base cálido de toda la pieza.","#1C1917"],["#1C1917","Carbón","Textos y estructura.","#fff"],["#D84A38","Rojo bermellón","Acento primario: botones, marcadores, línea guía.","#fff"],["#E5A84B","Ocre mostaza","Acento secundario para datos y énfasis.","#1C1917"],["#2D4A5E","Azul petróleo","Contraste frío y apoyo de jerarquía.","#fff"],["#B83220","Carmesí","Banda de quiebre visual con texto marfil.","#fff"]];
+const sw=document.getElementById('sw'),si=document.getElementById('swInfo');
+cols.forEach(c=>{const b=document.createElement('button');b.style.cssText=`background:${c[0]};color:${c[3]};border:1px solid rgba(0,0,0,.15)`;b.textContent=c[0];const f=()=>si.innerHTML=`<b>${c[0]} · ${c[1]}</b> — ${c[2]}`;b.onmouseenter=f;b.onclick=f;sw.appendChild(b)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const links=[...document.querySelectorAll('nav a')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}),{threshold:.4});
+document.querySelectorAll('section').forEach(s=>so.observe(s));
+const more={'Grilla vertical':'Una sola columna central con bandas de ~800 px; cada estación ocupa su propia banda para leer sin saltos.','Recorrido en “S”':'Gráfico a la izquierda, texto a la derecha, y viceversa; una línea punteada roja guía el ojo entre estaciones.','Proporción 60 / 40':'Si el texto supera el 40 %, se recorta o se convierte en ícono, dato o etiqueta corta.','1 · Persona':'Entregable: mapa de valores, voz y propósito en tres palabras clave.','2 · Identidad':'Entregable: paleta, tipografías y reglas de uso del sistema visual.','3 · Presencia':'Entregable: matriz de canales con formato, frecuencia y tono.','4 · Ecosistema':'Entregable: esquema de comunidad, productos y flujos de ingreso.'};
+document.querySelectorAll('.card').forEach(c=>{const t=c.querySelector('h3').textContent.trim();if(more[t]){const m=document.createElement('p');m.className='more';m.textContent=more[t];c.appendChild(m)}
+c.addEventListener('click',()=>c.classList.toggle('open'))});
+document.querySelectorAll('.card,.frame').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${x*9}deg) rotateX(${-y*9}deg) translateY(-5px)`});c.addEventListener('mouseleave',()=>c.style.transform='')});
+const det=['Retícula de 12 columnas y mesa de trabajo en proporción vertical.','Formas con Pluma y Formas básicas; trazos finos para el efecto de grabado.','Muestras globales con los 6 HEX y estilos de párrafo.','Revisión de contraste, exportar SVG/PDF y entrega.'];
+document.querySelectorAll('.tl>div').forEach((d,i)=>{const p=document.createElement('div');p.className='d';p.textContent=det[i];d.appendChild(p);d.addEventListener('click',()=>d.classList.toggle('open'))});
+const pb=document.createElement('div');pb.id='prog';document.body.appendChild(pb);
+addEventListener('scroll',()=>{pb.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+let auto=0;const sts=[...document.querySelectorAll('.st')];const stObs=new IntersectionObserver(es=>{if(es[0].isIntersecting&&!auto){auto=1;sts.forEach((s,i)=>setTimeout(()=>s.dispatchEvent(new Event('click')),i*900))}},{threshold:.5});stObs.observe(zig);
+const cObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const n=parseInt(e.target.textContent);if(/^\d+$/.test(e.target.textContent)){let k=0;const t=setInterval(()=>{k++;e.target.textContent=Math.min(n,k);if(k>=n)clearInterval(t)},180)}cObs.unobserve(e.target)}}),{threshold:.6});
+document.querySelectorAll('.band .stats span').forEach(s=>cObs.observe(s));
+document.querySelectorAll('#tipoChips,#estChips').forEach(g=>{const out=document.getElementById(g.id==='tipoChips'?'tipoInfo':'estInfo');g.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{if(g.id==='tipoChips')g.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));c.classList.toggle('on',g.id==='tipoChips'?true:!c.classList.contains('on'));out.textContent=c.dataset.d}))});
+document.querySelectorAll('.ill').forEach(c=>c.addEventListener('click',()=>{c.classList.toggle('flat');c.querySelector('.hint').textContent=c.classList.contains('flat')?'Ver referencia':'Ver flat'}));
+document.querySelectorAll('#mbF .chip').forEach(c=>c.addEventListener('click',()=>{document.querySelectorAll('#mbF .chip').forEach(x=>x.classList.toggle('on',x===c));document.querySelectorAll('.mt').forEach(t=>t.classList.toggle('dim',c.dataset.f!=='all'&&t.dataset.cat!==c.dataset.f))}));
+document.querySelectorAll('.mt').forEach(t=>t.addEventListener('click',()=>t.classList.toggle('on')));
+</script>
+</body>
+</html>
